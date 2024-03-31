@@ -101,7 +101,7 @@ class _PaginatedListViewState extends State<PaginatedListView> {
                           backgroundColor: Colors.white,
                           child: Text('AH'),
                         ),
-                        title: Text(names[itemIndex]), // Fix here
+                        title: Text(names[itemIndex]),
                         subtitle: const Text("checked-in"),
                         trailing: Row(
                           mainAxisSize: MainAxisSize.min,
@@ -109,7 +109,7 @@ class _PaginatedListViewState extends State<PaginatedListView> {
                             IconButton(
                               onPressed: () {
                                 setState(() {
-                                  names.removeAt(itemIndex); // Fix here
+                                  names.removeAt(itemIndex); 
                                 });
                               },
                               icon: Icon(
@@ -185,7 +185,7 @@ class _PaginatedListViewState extends State<PaginatedListView> {
   Future<void> _showMyDialog() async {
     return showDialog<void>(
       context: context,
-      barrierDismissible: false, // user must tap button!
+      barrierDismissible: false,
       builder: (BuildContext context) {
         return AlertDialog(
           title: const Text('Add Employee'),
@@ -219,7 +219,7 @@ class _PaginatedListViewState extends State<PaginatedListView> {
     });
     return showDialog<void>(
       context: context,
-      barrierDismissible: false, // user must tap button!
+      barrierDismissible: false, 
       builder: (BuildContext context) {
         return AlertDialog(
           title: const Text('Edit Employee'),
